@@ -1,14 +1,5 @@
 'use strict';
 
-let myname=prompt('do you know my name?');
-console.log(myname);
-if(myname === 'yes' || myname=== 'y'){
-alert('correct answer');
-}else if(myname==='no' || myname=== 'n'){
-alert('are you kidding me')
-}else{
-    alert('answer yes,y or no,n')
-}
 
 let mycar = prompt('do you know which my favorite car?');
 console.log (mycar);
