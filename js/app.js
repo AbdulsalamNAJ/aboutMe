@@ -4,6 +4,7 @@ let counter = 0;
 let score = 0;
 
 
+
 function questionNum1() {
   let mycar = prompt('Is BMW is my favorite car?');
   mycar.toLowerCase();
@@ -23,6 +24,7 @@ function questionNum2() {
     score++;
     alert('answer correct');
   }else if (myage === 'no' || myage === 'n') {
+
     console.log('correct answer');
   }else{
     alert('answer yes or no');
@@ -99,10 +101,12 @@ function questionNum7() {
         break outerloop;
       }
     }
+
     counter += 1;
     console.log(counter);
   }
   if(counter === 6){
+
     alert('my favourite language' + favlanguage);
   }
   alert(`Your score is ${score} out of 7`);
