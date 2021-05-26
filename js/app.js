@@ -46,7 +46,7 @@ if (mycontry === 'yes' || mycontry === 'y') {
 
 let myfather = prompt('do you know what is my father name?');
 console.log(myfather);
-if (myfather === 'yes' || myfather === 'y') {
+   if (myfather === 'yes' || myfather === 'y') {
     alert('answer correct');   
    }else if (myfather === 'no' || myfather === 'n') {
        console.log('correct answer');
@@ -54,33 +54,34 @@ if (myfather === 'yes' || myfather === 'y') {
     alert('answer yes or no')
    }
 
-let mylevelcourse = prompt('what is my level course?');
-let answer6=mylevelcourse;
-let mycorrectlevelcourse = 3;
-for (let i=0; i < 4; i++){
-    if(answer6 == mycorrectlevelcourse){
+let score= 0;
+let guessnum = null;
+for (let j=0; j<6; j++){
+    guessnum =prompt('guess my lucky number 1 to 10');
+    guessnum = Number(guessnum);
+    if(guessnum === 8){
+        score++;
         alert('correct answer');
         break;
-    }else if(answer6 < mycorrectlevelcourse){
-        answer6= prompt('too low');
-    }else if (answer6> mycorrectlevelcourse){
-        answer6= prompt('too high');
-    } if(i>=4){
-    alert('my level course 3');
+    }else if(guessnum < 8){
+        alert('too low')
+    }else if(guessnum > 8){
+        alert('to high');
+    }
+    if(j === 3){
+        alert('my lucky number is 8')
     }
 }
 
-    let programminglanguages = ['html','css','javascript'];
-console.log(programminglanguages);
-for (let j=0; j<6; j++){
-let guessmyprogramming = prompt('guess which my lovely progrmming language');
-    if (guessmyprogramming == programminglanguages [0] || guessmyprogramming == programminglanguages[1]){
-    alert('correct answer');
-    break;
-    }else if(guessmyprogramming !== programminglanguages ){
-    alert('incorrect answer')
+let favlanguage = ['css','html','javascript'];
+outerloop : for(let j=0 ; j<6 ; j++){
+    let useranswer =prompt('guess my favourite language');
+    for(let j=0 ; j < favlanguage.length ; j++){
+        if(useranswer === favlanguage[j]);
+        alert('correct answer');
+        break outerloop;
     }
-    if(j>=6){
-    alert('my lovely programming language  html and css');
-    }
+}
+if(j === 5){
+    alert('my favourite language' + favlanguage);
 }
