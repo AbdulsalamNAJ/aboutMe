@@ -1,5 +1,5 @@
 'use strict';
-
+alert('Good morning!');
 let counter = 0;
 let score = 0;
 
