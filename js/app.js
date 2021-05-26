@@ -1,15 +1,23 @@
 'use strict';
 
-
+let myname=prompt('do you know my name?');
+console.log(myname);
+if(myname === 'yes' || myname=== 'y'){
+alert('correct answer');
+}else if(myname==='no' || myname=== 'n'){
+alert('are you kidding me')
+}else{
+    alert('answer yes,y or no,n')
+}
 
 let mycar = prompt('do you know which my favorite car?');
 console.log (mycar);
 
 mycar.toLowerCase();
 
-if (mycar === 'yes' || mycar === 'y')  {
+if (mycar === 'yes' || mycar === 'y'){
  alert('answer correct');   
-}else if (mycar === 'no' || mycar === 'n') {
+}else if (mycar === 'no' || mycar === 'n'){
     console.log('correct answer');
 }else{
     alert('answer yes or no')
@@ -85,6 +93,6 @@ outerloop : for(let j=0 ; j<6 ; j++){
         }
     }
 }
- if(j === 5){
+ if( j === 5){
     alert('my favourite language' + favlanguage);
 }
